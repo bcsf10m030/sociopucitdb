@@ -1,0 +1,49 @@
+﻿@{
+    ViewBag.Title = "showDatesheet";
+}
+
+<script>
+  $('document').ready(function () {
+
+
+        $(".k-primary").kendoButton();
+
+  });
+</script>
+
+
+<div class ="k-content" style ="background-color:mintcream; height:auto; width:40%;margin-left:25%"> 
+  
+    <br><h2 class="k-header">Show DateSheet:</h2><br><br>
+   
+         <form class="forms" role="form" method ="post" action ="/Student/DownLoadDatesheet" enctype="multipart/form-data">
+
+             <div style ="font-size:medium" class="editor-label">
+            Class:
+        </div>
+        <div class="editor-field"> 
+                    Select Fall:
+                    <select id = "fall" name ="fall" >
+          		        <option value="F05">F05</option>
+                        <option value="F06">F06</option>
+          		        <option value="F07">F07</option>
+                        <option value="F08">F08</option>
+                        <option value="F09">F09</option>
+                        <option value="F10">F10</option>
+                        <option value="F11">F11</option>
+                        <option value="F12">F12</option>
+                        <option value="F13">F13</option>
+                  </select>
+
+                   Select Degree:
+
+                        <select id = "degree" name ="degree" >
+          		        <option value="BCS">BCS</option>
+                        <option value="BIT">BIT</option>
+          		        <option value="BSE">BSE</option>
+                        <option value="MIT">MIT</option>
+                  </select>
+        </div>
+             <br><br><button class="k-primary" type="submit" id ="btn2" style="width:25%;height:auto; margin-bottom:3%">View DateSheet</button>
+    </form>
+</div>
